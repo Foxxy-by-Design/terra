@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Terrarium Guide - Create Your Mini Ecosystem</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: #f7fafc;
+            border-radius: 12px;
+            border-left: 5px solid #4a7c2c;
+        }
+
+        section h2 {
+            color: #2d5016;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .step-number {
+            background: #4a7c2c;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .visual-placeholder {
+            background: linear-gradient(135deg, #e0f2e9 0%, #c8e6d4 100%);
+            border: 2px dashed #4a7c2c;
+            border-radius: 8px;
+            padding: 3rem;
+            margin: 1.5rem 0;
+            text-align: center;
+            color: #2d5016;
+            font-style: italic;
+        }
+
+        .materials-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .material-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 2px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .material-icon {
+            font-size: 1.5rem;
+        }
+
+        .plant-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .plant-type {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 2px solid #e2e8f0;
+        }
+
+        .plant-type h3 {
+            color: #4a7c2c;
+            margin-bottom: 0.75rem;
+        }
+
+        .care-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .care-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #4a7c2c;
+        }
+
+        .care-card h3 {
+            color: #2d5016;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .problem-solution {
+            background: #fff5f5;
+            border-left: 4px solid #e53e3e;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .problem-solution strong {
+            color: #e53e3e;
+        }
+
+        .tip-box {
+            background: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .tip-box::before {
+            content: "💡 Tip: ";
+            font-weight: bold;
+            color: #f59e0b;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .plant-comparison {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌿 DIY Terrarium Guide</h1>
+            <p>Create Your Own Mini Ecosystem in 8 Easy Steps</p>
+        </header>
+
+        <div class="content">
+            <!-- Section 1: Introduction -->
+            <section>
+                <h2>🏡 What is a Terrarium?</h2>
+                <p>A terrarium is a mini ecosystem of plants housed in a clear container. Think of it as a tiny garden that practically takes care of itself! Perfect for college students, busy professionals, or anyone living in a small space.</p>
+                
+                <h3 style="margin-top: 1.5rem; color: #2d5016;">Why Make a Terrarium?</h3>
+                <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                    <li><strong>Low Maintenance:</strong> Water every 2-3 weeks</li>
+                    <li><strong>Space-Saving:</strong> Perfect for dorm rooms and apartments</li>
+                    <li><strong>Aesthetically Pleasing:</strong> A living piece of art</li>
+                    <li><strong>Stress Relief:</strong> Connect with nature indoors</li>
+                </ul>
+
+                <div class="visual-placeholder">
+                    📸 Image: Completed terrarium with labeled layers (drainage, charcoal, soil, plants)
+                </div>
+            </section>
+
+            <!-- Section 2: Materials -->
+            <section>
+                <h2>🛠️ Materials You'll Need</h2>
+                <p>Gather these supplies before you start. Everything can be found at your local garden center or online!</p>
+
+                <div class="materials-list">
+                    <div class="material-item">
+                        <span class="material-icon">🫙</span>
+                        <span>Clear container (with or without lid)</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">🪨</span>
+                        <span>Small rocks or pebbles</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">⚫</span>
+                        <span>Activated charcoal (optional)</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">🌱</span>
+                        <span>Potting soil</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">🌿</span>
+                        <span>Small plants (2-3)</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">✨</span>
+                        <span>Decorative items</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">💧</span>
+                        <span>Spray bottle</span>
+                    </div>
+                    <div class="material-item">
+                        <span class="material-icon">🥄</span>
+                        <span>Small spoon or trowel</span>
+                    </div>
+                </div>
+
+                <div class="visual-placeholder">
+                    📸 Photo: All materials laid out and labeled on a clean surface
+                </div>
+            </section>
+
+            <!-- Section 3: Step 1 -->
+            <section>
+                <h2><span class="step-number">1</span> Create the Drainage Layer</h2>
+                <p><strong>Why this matters:</strong> Drainage prevents root rot by allowing excess water to drain away from your plants' roots.</p>
+                
+                <p style="margin-top: 1rem;"><strong>Instructions:</strong> Add 1-2 inches of small rocks or pebbles to the bottom of your container. This creates a reservoir for excess water.</p>
+
+                <div class="tip-box">
+                    Use pebbles that are roughly the same size for even drainage distribution.
+                </div>
+
+                <div class="visual-placeholder">
+                    📸 Close-up: Rocks being poured into clear container with 1-2 inch depth marked
+                </div>
+            </section>
+
+            <!-- Section 4: Step 2 -->
+            <section>
+                <h2><span class="step-number">2</span> Add Activated Charcoal</h2>
+                <p><strong>Why this matters:</strong> Activated charcoal filters the water, prevents bacterial growth, and keeps your terrarium smelling fresh.</p>
+                
+                <p style="margin-top: 1rem;"><strong>Instructions:</strong> Add a thin layer (about 1/2 inch) over the rocks. <em>Note: This step is optional but highly recommended for closed terrariums.</em></p>
+
+                <div class="visual-placeholder">
+                    📸 Image: Charcoal layer being added with clear distinction between rock and charcoal layers
+                </div>
+            </section>
+
+            <!-- Section 5: Step 3 -->
+            <section>
+                <h2><span class="step-number">3</span> Add Potting Soil</h2>
+                <p><strong>Why this matters:</strong> This is where your plants will live and get the nutrients they need to thrive.</p>
+                
+                <p style="margin-top: 1rem;"><strong>Instructions:</strong> Add 2-3 inches of potting soil, depending on the size of your plant roots. Use a spoon to make small holes where you'll place each plant.</p>
+
+                <div class="tip-box">
+                    Gently pat down the soil to remove air pockets, but don't pack it too tightly.
+                </div>
+
+                <div class="visual-placeholder">
+                    📸 Photo: Soil being added with spoon, depth marked | Second image showing prepared holes
+                </div>
+            </section>
+
+            <!-- Section 6: Step 4 -->
+            <section>
+                <h2><span class="step-number">4</span> Plant Your Plants</h2>
+                <p><strong>Instructions:</strong> Carefully remove plants from their containers, gently loosen the roots, and place them in the prepared holes. Pat soil around the base to secure them.</p>
+
+                <h3 style="margin-top: 1.5rem; color: #2d5016;">Choosing the Right Plants:</h3>
+                <div class="plant-comparison">
+                    <div class="plant-type">
+                        <h3>🌵 Open Terrariums</h3>
+                        <p><strong>Best for:</strong> Low humidity environments</p>
+                        <p><strong>Plants:</strong> Succulents, cacti, air plants</p>
+                        <p><strong>Container:</strong> No lid or wide opening</p>
+                    </div>
+                    <div class="plant-type">
+                        <h3>🌿 Closed Terrariums</h3>
+                        <p><strong>Best for:</strong> High humidity environments</p>
+                        <p><strong>Plants:</strong> Ferns, moss, fittonias</p>
+                        <p><strong>Container:</strong> Sealed or nearly sealed lid</p>
+                    </div>
+                </div>
+
+                <div class="tip-box">
+                    Start with 2-3 small plants. It's better to leave room for growth than to overcrowd!
+                </div>
+
+                <div class="visual-placeholder">
+                    📸 Before & After: Plants in original containers → Plants placed in terrarium
+                    <br><br>
+                    📸 Visual guide: Open vs. closed terrarium plant recommendations with images
+                </div>
+            </section>
+
+            <!-- Section 7: Step 5 -->
+            <section>
+                <h2><span class="step-number">5</span> Add Decorative Touches & Water</h2>
+                <p><strong>Instructions:</strong> Now for the fun part! Add decorative elements like small stones, crystals, or tiny figurines to personalize your terrarium.</p>
+
+                <p style="margin-top: 1rem;">Then, lightly mist the soil with your spray bottle—just enough to moisten, not soak. Remember: terrariums need very little water!</p>
+
+                <div class="tip-box">
+                    For closed terrariums, you might only need to water once a month or less. The ecosystem recycles its own moisture!
+                </div>
+
+                <div class="visual-placeholder">
+                    📸 Photo: Decorative elements being placed with tweezers or hands
+                    <br><br>
+                    📸 Photo: Spray bottle misting the terrarium (demonstrating light application)
+                </div>
+            </section>
+
+            <!-- Section 8: Care & Troubleshooting -->
+            <section>
+                <h2>🌟 Care & Troubleshooting</h2>
+                
+                <h3 style="color: #2d5016; margin-bottom: 1rem;">Basic Care Instructions:</h3>
+                <div class="care-grid">
+                    <div class="care-card">
+                        <h3>☀️ Light</h3>
+                        <p>Place in bright, indirect sunlight. Avoid direct sun—it can overheat and burn plants.</p>
+                    </div>
+                    <div class="care-card">
+                        <h3>💧 Watering (Open)</h3>
+                        <p>Water lightly once per week. Check soil moisture first—only water if dry.</p>
+                    </div>
+                    <div class="care-card">
+                        <h3>💧 Watering (Closed)</h3>
+                        <p>Water every 2-3 weeks or less. Watch for condensation as your guide.</p>
+                    </div>
+                    <div class="care-card">
+                        <h3>🌡️ Condensation</h3>
+                        <p>Some condensation is good! Too much? Remove lid temporarily to air out.</p>
+                    </div>
+                </div>
+
+                <h3 style="color: #2d5016; margin: 2rem 0 1rem;">Common Problems & Solutions:</h3>
+                
+                <div class="problem-solution">
+                    <strong>🟡 Yellowing Leaves</strong>
+                    <p><strong>Cause:</strong> Overwatering<br>
+                    <strong>Solution:</strong> Let soil dry out. Reduce watering frequency. Remove any dead leaves.</p>
+                </div>
+
+                <div class="problem-solution">
+                    <strong>🟤 Brown, Crispy Leaves</strong>
+                    <p><strong>Cause:</strong> Underwatering or too much direct sun<br>
+                    <strong>Solution:</strong> Water lightly and move to shadier spot.</p>
+                </div>
+
+                <div class="problem-solution">
+                    <strong>🍄 Mold or Fungus</strong>
+                    <p><strong>Cause:</strong> Too much moisture<br>
+                    <strong>Solution:</strong> Remove lid, increase air circulation, reduce watering. Remove affected areas with clean tweezers.</p>
+                </div>
+
+                <div class="visual-placeholder">
+                    📸 Comparison images: Healthy terrarium vs. common problems (overwatering, underwatering, mold)
+                    <br><br>
+                    📸 Care schedule chart or infographic
+                </div>
+            </section>
+
+            <section style="text-align: center; background: linear-gradient(135deg, #e0f2e9 0%, #c8e6d4 100%); border: none;">
+                <h2 style="color: #2d5016;">🎉 Congratulations!</h2>
+                <p style="font-size: 1.1rem; margin-top: 1rem;">You've created your very own mini ecosystem! With minimal care, your terrarium will thrive for months or even years. Enjoy your beautiful, low-maintenance piece of nature.</p>
+                <p style="margin-top: 1rem; font-style: italic;">Happy planting! 🌱</p>
+            </section>
+        </div>
+
+        <footer>
+            <p>© 2025 DIY Terrarium Guide | Perfect for college students, busy professionals, and plant lovers everywhere</p>
+        </footer>
+    </div>
+
+    <!-- Instructions for deploying this webpage -->
+    <!-- 
+    TO USE THIS WEBPAGE ONLINE:
+    
+    METHOD 1 - GitHub Pages (FREE):
+    1. Create a GitHub account at github.com
+    2. Create a new repository
+    3. Upload this HTML file and name it "index.html"
+    4. Go to Settings > Pages
+    5. Select your branch and save
+    6. Your site will be live at: https://yourusername.github.io/repository-name
+    
+    METHOD 2 - Netlify Drop (FREE):
+    1. Go to app.netlify.com/drop
+    2. Drag and drop this HTML file
+    3. Your site goes live instantly with a free URL
+    4. You can customize the URL in settings
+    
+    METHOD 3 - Vercel (FREE):
+    1. Go to vercel.com
+    2. Sign up and click "Add New Project"
+    3. Upload this HTML file
+    4. Deploy - your site is live!
+    
+    METHOD 4 - Local Computer:
+    1. Save this as "terrarium.html" on your computer
+    2. Double-click the file to open in your browser
+    3. Works offline!
+    
+    TO ADD IMAGES:
+    - Replace the placeholder divs with: <img src="your-image.jpg" alt="description">
+    - Upload images to the same folder as your HTML file
+    - Or use image URLs from the web
+    -->
+</body>
+</html>
